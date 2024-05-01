@@ -1,0 +1,20 @@
+.job-card {
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 10px; 
+    background-color: #f9f9f9; 
+}
+
+.apply-button {
+    cursor: pointer;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+}
+
+.apply-button:hover {
+    background-color: #0056b3; 
+}
