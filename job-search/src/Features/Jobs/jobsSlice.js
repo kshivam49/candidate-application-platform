@@ -33,6 +33,7 @@ const jobsSlice = createSlice({
                     state.jobs.push(...jdList);
                     state.hasMore = jdList.length > 0;
                     state.page += 1;
+                    console.log(jdList)
                 } else {
                     console.error('Payload does not contain a valid job list:', action.payload);
                 }

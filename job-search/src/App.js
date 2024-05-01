@@ -7,7 +7,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>Candidate Application Platform</h1>
         <JobList />
       </div>
     </Provider>

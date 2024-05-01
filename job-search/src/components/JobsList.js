@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchJobs } from '../Features/Jobs/jobsSlice';
 import { Grid } from '@mui/material';
 import JobCard from './JobCard';
+import './JobList.css';
 
 const JobList = () => {
     const dispatch = useDispatch();
@@ -38,9 +39,24 @@ const JobList = () => {
     };
 
     return (
-        <div>
-            <input type="text" placeholder="Filter by Job Role" value={filterRole} onChange={handleRoleChange} />
-            <input type="text" placeholder="Filter by Location" value={filterLocation} onChange={handleLocationChange} />
+        <div className="job-list-container">
+            <h1 className="title">Candidate Application Platform</h1>
+            <div className="filters-container">
+                <input
+                    type="text"
+                    className="filter-input"
+                    placeholder="Filter by Job Role"
+                    value={filterRole}
+                    onChange={handleRoleChange}
+                />
+                <input
+                    type="text"
+                    className="filter-input"
+                    placeholder="Filter by Location"
+                    value={filterLocation}
+                    onChange={handleLocationChange}
+                />
+            </div>
 
             <Grid container spacing={2}>
                 {jobs.filter(filterJobs).map((job, index) => (

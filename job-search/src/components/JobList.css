@@ -1,0 +1,38 @@
+.job-list-container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filters-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-input::placeholder {
+    color: #aaa;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+    .filters-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
